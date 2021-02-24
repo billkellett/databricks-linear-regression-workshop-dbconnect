@@ -51,9 +51,9 @@ def setup(p_user_name, p_spark, p_api_token):
     dbutils.fs.mkdirs(f"file:/databricks/driver/{local_data_path}")
     print(f"Recreated local path {local_data_path}")
 
-    print("listing files on driver")
-    print(dbutils.fs.ls("file:/databricks/driver/"))
-    print("done listing")
+    # print("listing files on driver")
+    # print(dbutils.fs.ls("file:/databricks/driver/"))
+    # print("done listing")
 
     # Now download the data we'll use as input
     # If we're using dbconnect, this will download to the local dev machine into the Pycharm's project directory
